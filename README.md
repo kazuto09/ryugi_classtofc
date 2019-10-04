@@ -12,7 +12,7 @@ https://ja.reactjs.org/docs/thinking-in-react.html
 ---state管理ついて----
 
 template配下(アトミックデザインで言うところのtemplateの概念とは少し異なる。)のFilterableProductTable.jsxにstateを持たせた。子要素にはそのstate変更用の関数をpropsとして渡している。
-organisms配下のSearchBar.jsxがOnchangeの際に画面から受け取ったvalue要素、checked要素を親(FilterableProductTable.jsx)のからpropsで渡されたstate関数を使用（経由）して親のpropsを変更している。それによってorganisms配下のProductTable.jsxに渡るpropsが変わるので、商品がフィルタされる仕組み。
+organisms配下のSearchBar.jsxがOnchangeの際に画面から受け取ったvalue要素、checked要素を親(FilterableProductTable.jsx)からpropsで渡されたstate関数を使用（経由）して親のpropsを変更している。それによってorganisms配下のProductTable.jsxに渡るpropsが変わるので、商品がフィルタされる仕組み。
 ※移植に力を入れたので細かい動作の認識が間違っていたらすみません。
 
 ---propsの流れについて----
