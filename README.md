@@ -12,6 +12,7 @@ organisms配下のSearchBar.jsxがOnchangeの際に画面から受け取ったva
 ※移植に力を入れたので細かい動作の認識が間違っていたらすみません。
 
 ---propsの流れについて----
+
 Pasges配下のProductPagesjsxの同階層にあるPRODUCTSjsxのデータを子要素へ渡している。当データの流れを追うことでpropsを子に流す感覚の理解が深まると思う。
 
 
