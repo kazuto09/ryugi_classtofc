@@ -6,6 +6,9 @@
 
 ※前提条件としてReactの流儀のソースコードを読んでいてstate管理の概念を多少なりとも理解していること
 
+<Reactの流儀>
+https://ja.reactjs.org/docs/thinking-in-react.html
+
 ---state管理ついて----
 
 template配下(アトミックデザインで言うところのtemplateの概念とは少し異なる。)のFilterableProductTable.jsxにstateを持たせた。子要素にはそのstate変更用の関数をpropsとして渡している。
