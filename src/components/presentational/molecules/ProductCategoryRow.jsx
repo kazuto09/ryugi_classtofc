@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProductCategoryRow = props =>{
-  const category = props.category;
+  const {category} = props;
   
   return (
     <tr>

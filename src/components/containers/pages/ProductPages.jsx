@@ -1,12 +1,29 @@
-import React from 'react';
-import PRODUCTS from './PRODUCTS'; 
-import FilterableProductTable from '../template/FilterableProductTable';
+import React from "react";
+import products from "./products_data";
+import FilterableProductTable from "../template/FilterableProductTable";
 
-const PRODUCTS_PAGE = () =>{
-    return (
-        <div>
-         <FilterableProductTable products={PRODUCTS}/>
-        </div>
-    )
-} ;
-export default PRODUCTS_PAGE;
+const ProductPage = () => {
+  const [filterText, setfilterText] = React.useState("");
+  const [inStockOnly, setinStockOnly] = React.useState(false);
+
+  const handleFilterTextChange = (e) => {
+    setfilterText(e);
+  };
+
+  const handleInStockChange = (e) => {
+    setinStockOnly(e);
+  };
+
+  return (
+    <div>
+      <FilterableProductTable
+        filterText={filterText}
+        inStockOnly={inStockOnly}
+        handleFilterTextChange={handleFilterTextChange}
+        handleInStockChange={handleInStockChange}
+        products={products}
+      />
+    </div>
+  );
+};
+export default ProductPage;
